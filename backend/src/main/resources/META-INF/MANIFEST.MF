@@ -1,0 +1,1 @@
+Main-Class: com.ai_multilang.Main

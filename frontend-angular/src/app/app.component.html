@@ -1,0 +1,57 @@
+<div class="vh-70 container col-sm border rounded m-1 t mx-auto bg-light">
+  <!-- Header -->
+  <div class=" text-secondary text-center py-3 border-bottom">
+    <h4>Chat With AI In Your Language</h4>
+  </div>
+
+  <!-- Chat Area -->
+  <div
+    #scrollContainer
+    class="flex-grow-1 overflow-auto p-3 bg-white t-4 vh-100 border"
+    style="max-height: calc(100vh - 160px);"
+  >
+    <div *ngFor="let msg of messages" class="mb-2">
+      <div [ngClass]="{'text-end': msg.role === 'user', 'text-start': msg.role === 'ai'}">
+        <div
+          class="d-inline-block p-2 rounded"
+          [ngClass]="{
+            'bg-light': msg.role === 'user',
+            '': msg.role === 'ai'
+          }"
+        >
+          <!-- AI Response (HTML) -->
+          <div *ngIf="msg.isHtml" [innerHTML]="msg.text"></div>
+
+          <!-- Plain Text (User or fallback) -->
+          <div *ngIf="!msg.isHtml">{{ msg.text }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div *ngIf="loading" class="d-flex align-items-center mb-3">
+      <div class="spinner-border text-secondary me-2" role="status" style="width: 1.5rem; height: 1.5rem;">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <span class="text-muted">AI is thinking...</span>
+    </div>
+  </div>
+
+  <!-- Input -->
+  <div class="p-3 border-top">
+    <div class="input-group">
+      <input
+        [(ngModel)]="prompt"
+        class="form-control"
+        placeholder="Type your message..."
+        [disabled]="loading"
+        (keyup.enter)="!loading && send()"/>
+      <button
+        class="btn btn-primary"
+        (click)="send()"
+        [disabled]="loading || !prompt.trim()">
+        {{ loading ? 'Sending...' : 'Send' }}
+      </button>
+    </div>
+  </div> 
+</div>

@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chat-container {
+    height: 100vh;
+  }
+  
+  .input-area {
+    background: #fff;
+  }
+  

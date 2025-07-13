@@ -1,0 +1,334 @@
+2025-07-13T11:55:49.992+05:30  INFO 23005 --- [main] com.ai_multilang.Main                    : Starting Main v1.0-SNAPSHOT using Java 21.0.7 with PID 23005 (/home/kk/Documents/ai-multilang-chat-speech/backend/target/AiMultilangChatSpeech-1.0-SNAPSHOT.jar started by root in /home/kk/Documents/ai-multilang-chat-speech/backend)
+2025-07-13T11:55:50.182+05:30  INFO 23005 --- [main] com.ai_multilang.Main                    : No active profile set, falling back to 1 default profile: "default"
+2025-07-13T11:55:59.211+05:30  INFO 23005 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-13T11:55:59.282+05:30  INFO 23005 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-13T11:55:59.283+05:30  INFO 23005 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-07-13T11:55:59.432+05:30  INFO 23005 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-13T11:55:59.434+05:30  INFO 23005 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8566 ms
+2025-07-13T11:56:00.838+05:30 DEBUG 23005 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-07-13T11:56:01.277+05:30 DEBUG 23005 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-13T11:56:01.461+05:30 DEBUG 23005 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-13T11:56:01.621+05:30 DEBUG 23005 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-13T11:56:02.279+05:30  INFO 23005 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-13T11:56:02.522+05:30  INFO 23005 --- [main] com.ai_multilang.Main                    : Started Main in 17.469 seconds (process running for 22.523)
+2025-07-13T11:57:40.850+05:30  INFO 23005 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13T11:57:40.853+05:30  INFO 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-13T11:57:40.862+05:30 DEBUG 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-13T11:57:40.876+05:30 DEBUG 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-13T11:57:40.881+05:30 DEBUG 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-13T11:57:40.891+05:30 DEBUG 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4239b57d
+2025-07-13T11:57:40.896+05:30 DEBUG 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4f5d2ea7
+2025-07-13T11:57:40.900+05:30 DEBUG 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-13T11:57:40.901+05:30  INFO 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 39 ms
+2025-07-13T11:57:41.012+05:30 DEBUG 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/v1/chat", parameters={}
+2025-07-13T11:57:41.089+05:30 DEBUG 23005 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T11:57:41.234+05:30 DEBUG 23005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T11:57:41.293+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T11:57:41.295+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T11:57:41.915+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@45ae1120]
+2025-07-13T11:57:42.199+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11434/api/generate
+2025-07-13T11:57:42.300+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T11:57:42.315+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "what is h20?"
+}
+] as "application/json"
+2025-07-13T11:58:43.572+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2025-07-13T11:58:43.612+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/x-ndjson"
+2025-07-13T12:00:56.959+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T12:00:56.962+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T12:00:57.004+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@fe5dd7a]
+2025-07-13T12:00:57.029+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11434/api/generate
+2025-07-13T12:00:57.031+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T12:00:57.041+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "hi"
+}
+] as "application/json"
+2025-07-13T12:01:07.629+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2025-07-13T12:01:07.635+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/x-ndjson"
+2025-07-13T12:01:18.516+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T12:01:18.555+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@60b6960b]
+2025-07-13T12:01:18.908+05:30  WARN 23005 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to write: java.io.IOException: Broken pipe]
+2025-07-13T12:01:18.909+05:30 DEBUG 23005 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T12:01:26.209+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T12:01:26.211+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@719588fb]
+2025-07-13T12:01:26.223+05:30 DEBUG 23005 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T12:01:42.826+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T12:01:42.842+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T12:01:42.855+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@5e96fb69]
+2025-07-13T12:01:42.864+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11434/api/generate
+2025-07-13T12:01:42.870+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T12:01:42.871+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "what is water?"
+}
+] as "application/json"
+2025-07-13T12:01:47.826+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
+2025-07-13T12:01:47.830+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/x-ndjson"
+2025-07-13T12:02:43.316+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T12:02:43.319+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@20b79683]
+2025-07-13T12:02:43.326+05:30 DEBUG 23005 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T12:03:55.326+05:30 DEBUG 23005 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T12:03:55.329+05:30 DEBUG 23005 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T12:03:55.371+05:30 DEBUG 23005 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@24471ab]
+2025-07-13T12:03:55.403+05:30 DEBUG 23005 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11434/api/generate
+2025-07-13T12:03:55.406+05:30 DEBUG 23005 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T12:03:55.409+05:30 DEBUG 23005 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "hey"
+}
+] as "application/json"
+2025-07-13T12:04:00.501+05:30 DEBUG 23005 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
+2025-07-13T12:04:00.510+05:30 DEBUG 23005 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/x-ndjson"
+2025-07-13T07:09:35.933Z  INFO 73 --- [main] com.ai_multilang.Main                    : Starting Main using Java 21.0.7 with PID 73 (/app/target/classes started by root in /app)
+2025-07-13T07:09:35.944Z  INFO 73 --- [main] com.ai_multilang.Main                    : The following 1 profile is active: "dev"
+2025-07-13T07:09:43.309Z  INFO 73 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-13T07:09:43.464Z  INFO 73 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-13T07:09:43.466Z  INFO 73 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-07-13T07:09:44.268Z  INFO 73 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-13T07:09:44.270Z  INFO 73 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7737 ms
+2025-07-13T07:09:45.372Z DEBUG 73 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-07-13T07:09:45.809Z DEBUG 73 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-13T07:09:45.912Z DEBUG 73 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-13T07:09:46.019Z DEBUG 73 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-13T07:09:46.409Z  INFO 73 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-13T07:09:46.476Z  INFO 73 --- [main] com.ai_multilang.Main                    : Started Main in 14.274 seconds (process running for 17.361)
+2025-07-13T08:51:13.757Z  INFO 74 --- [main] com.ai_multilang.Main                    : Starting Main using Java 21.0.7 with PID 74 (/app/target/classes started by root in /app)
+2025-07-13T08:51:13.778Z  INFO 74 --- [main] com.ai_multilang.Main                    : The following 1 profile is active: "dev"
+2025-07-13T08:51:18.927Z  INFO 74 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-13T08:51:19.086Z  INFO 74 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-13T08:51:19.088Z  INFO 74 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-07-13T08:51:19.490Z  INFO 74 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-13T08:51:19.492Z  INFO 74 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5290 ms
+2025-07-13T08:51:20.316Z DEBUG 74 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-07-13T08:51:20.580Z DEBUG 74 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-13T08:51:20.660Z DEBUG 74 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-13T08:51:20.769Z DEBUG 74 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-13T08:51:21.185Z  INFO 74 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-13T08:51:21.218Z  INFO 74 --- [main] com.ai_multilang.Main                    : Started Main in 11.947 seconds (process running for 15.358)
+2025-07-13T08:51:35.960Z  INFO 74 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13T08:51:35.962Z  INFO 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-13T08:51:35.964Z DEBUG 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-13T08:51:35.966Z DEBUG 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-13T08:51:35.967Z DEBUG 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-13T08:51:35.976Z DEBUG 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@68d59780
+2025-07-13T08:51:35.982Z DEBUG 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@dccb30c
+2025-07-13T08:51:35.984Z DEBUG 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-13T08:51:35.988Z  INFO 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2025-07-13T08:51:36.055Z DEBUG 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/v1/chat", parameters={}
+2025-07-13T08:51:36.106Z DEBUG 74 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T08:51:36.191Z DEBUG 74 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T08:51:36.233Z DEBUG 74 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T08:51:36.244Z DEBUG 74 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T08:51:36.543Z DEBUG 74 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@701c83b]
+2025-07-13T08:51:36.713Z DEBUG 74 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11434/api/generate
+2025-07-13T08:51:36.752Z DEBUG 74 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T08:51:36.759Z DEBUG 74 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "hi\"
+}
+] as "application/json"
+2025-07-13T08:51:37.309Z DEBUG 74 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T08:51:37.321Z DEBUG 74 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@136ba753]
+2025-07-13T08:51:37.362Z DEBUG 74 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T08:51:53.528Z DEBUG 74 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T08:51:53.532Z DEBUG 74 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T08:51:53.546Z DEBUG 74 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@552846df]
+2025-07-13T08:51:53.556Z DEBUG 74 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11434/api/generate
+2025-07-13T08:51:53.562Z DEBUG 74 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T08:51:53.566Z DEBUG 74 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "whats h2o?"
+}
+] as "application/json"
+2025-07-13T08:51:53.577Z DEBUG 74 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T08:51:53.582Z DEBUG 74 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@2b821759]
+2025-07-13T08:51:53.593Z DEBUG 74 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T08:52:15.117Z DEBUG 74 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T08:52:15.128Z DEBUG 74 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T08:52:15.153Z DEBUG 74 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@64574c8]
+2025-07-13T08:52:15.184Z DEBUG 74 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11434/api/generate
+2025-07-13T08:52:15.188Z DEBUG 74 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T08:52:15.189Z DEBUG 74 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "so whats new?"
+}
+] as "application/json"
+2025-07-13T08:52:15.209Z DEBUG 74 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T08:52:15.210Z DEBUG 74 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@783c8974]
+2025-07-13T08:52:15.229Z DEBUG 74 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T08:53:21.023Z DEBUG 74 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T08:53:21.026Z DEBUG 74 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T08:53:21.037Z DEBUG 74 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@742813c8]
+2025-07-13T08:53:21.049Z DEBUG 74 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11434/api/generate
+2025-07-13T08:53:21.053Z DEBUG 74 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T08:53:21.054Z DEBUG 74 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "so"
+}
+] as "application/json"
+2025-07-13T08:53:21.064Z DEBUG 74 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T08:53:21.065Z DEBUG 74 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@aa3673b]
+2025-07-13T08:53:21.071Z DEBUG 74 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T08:53:28.435Z DEBUG 74 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T08:53:28.438Z DEBUG 74 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T08:53:28.457Z DEBUG 74 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@73dd1615]
+2025-07-13T08:53:28.487Z DEBUG 74 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11434/api/generate
+2025-07-13T08:53:28.501Z DEBUG 74 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T08:53:28.505Z DEBUG 74 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "hey"
+}
+] as "application/json"
+2025-07-13T08:53:28.514Z DEBUG 74 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T08:53:28.519Z DEBUG 74 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@d5180f8]
+2025-07-13T08:53:28.529Z DEBUG 74 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T09:13:15.771Z  INFO 73 --- [main] com.ai_multilang.Main                    : Starting Main using Java 21.0.7 with PID 73 (/app/target/classes started by root in /app)
+2025-07-13T09:13:15.813Z  INFO 73 --- [main] com.ai_multilang.Main                    : The following 1 profile is active: "dev"
+2025-07-13T09:13:23.531Z  INFO 73 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-13T09:13:23.665Z  INFO 73 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-13T09:13:23.667Z  INFO 73 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-07-13T09:13:24.088Z  INFO 73 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-13T09:13:24.090Z  INFO 73 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7864 ms
+2025-07-13T09:13:25.074Z DEBUG 73 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-07-13T09:13:25.330Z DEBUG 73 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-13T09:13:25.451Z DEBUG 73 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-13T09:13:25.559Z DEBUG 73 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-13T09:13:25.898Z  INFO 73 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-13T09:13:25.938Z  INFO 73 --- [main] com.ai_multilang.Main                    : Started Main in 16.331 seconds (process running for 26.486)
+2025-07-13T09:13:48.617Z  INFO 73 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13T09:13:48.619Z  INFO 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-13T09:13:48.621Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-13T09:13:48.622Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-13T09:13:48.624Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-13T09:13:48.629Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@68d59780
+2025-07-13T09:13:48.638Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@dccb30c
+2025-07-13T09:13:48.645Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-13T09:13:48.648Z  INFO 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2025-07-13T09:13:48.706Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/v1/chat", parameters={}
+2025-07-13T09:13:48.779Z DEBUG 73 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T09:13:48.869Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T09:13:48.914Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T09:13:48.916Z DEBUG 73 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T09:13:49.230Z DEBUG 73 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@701c83b]
+2025-07-13T09:13:49.423Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:11500/api/generate
+2025-07-13T09:13:49.453Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T09:13:49.460Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "hi"
+}
+] as "application/json"
+2025-07-13T09:13:49.637Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T09:13:49.642Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@136ba753]
+2025-07-13T09:13:49.682Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T09:53:07.598Z  INFO 73 --- [main] com.ai_multilang.Main                    : Starting Main using Java 21.0.7 with PID 73 (/app/target/classes started by root in /app)
+2025-07-13T09:53:07.620Z  INFO 73 --- [main] com.ai_multilang.Main                    : The following 1 profile is active: "dev"
+2025-07-13T09:53:12.253Z  INFO 73 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-13T09:53:12.348Z  INFO 73 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-13T09:53:12.349Z  INFO 73 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-07-13T09:53:12.672Z  INFO 73 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-13T09:53:12.674Z  INFO 73 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4722 ms
+2025-07-13T09:53:13.387Z DEBUG 73 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-07-13T09:53:13.675Z DEBUG 73 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-13T09:53:13.774Z DEBUG 73 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-13T09:53:13.862Z DEBUG 73 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-13T09:53:14.172Z  INFO 73 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-13T09:53:14.195Z  INFO 73 --- [main] com.ai_multilang.Main                    : Started Main in 10.913 seconds (process running for 13.956)
+2025-07-13T09:53:48.996Z  INFO 73 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13T09:53:48.997Z  INFO 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-13T09:53:48.999Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-13T09:53:49.000Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-13T09:53:49.001Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-13T09:53:49.005Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@250c060f
+2025-07-13T09:53:49.007Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@49cad9a3
+2025-07-13T09:53:49.010Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-13T09:53:49.011Z  INFO 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2025-07-13T09:53:49.059Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/v1/chat", parameters={}
+2025-07-13T09:53:49.119Z DEBUG 73 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T09:53:49.200Z DEBUG 73 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T09:53:49.235Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T09:53:49.237Z DEBUG 73 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T09:53:49.533Z DEBUG 73 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@52c3eee2]
+2025-07-13T09:53:49.656Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://ollama:11434/api/generate
+2025-07-13T09:53:49.705Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T09:53:49.711Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "hi"
+}
+] as "application/json"
+2025-07-13T09:54:51.491Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2025-07-13T09:54:52.557Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/x-ndjson"
+2025-07-13T09:55:15.285Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T09:55:15.433Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@183e8ff2]
+2025-07-13T09:55:17.141Z DEBUG 73 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T10:18:32.734Z  INFO 78 --- [main] com.ai_multilang.Main                    : Starting Main using Java 21.0.7 with PID 78 (/app/target/classes started by root in /app)
+2025-07-13T10:18:32.749Z  INFO 78 --- [main] com.ai_multilang.Main                    : The following 1 profile is active: "dev"
+2025-07-13T10:18:39.565Z  INFO 78 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-13T10:18:39.735Z  INFO 78 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-13T10:18:39.737Z  INFO 78 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-07-13T10:18:40.239Z  INFO 78 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-13T10:18:40.241Z  INFO 78 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7181 ms
+2025-07-13T10:18:41.187Z DEBUG 78 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-07-13T10:18:41.494Z DEBUG 78 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-13T10:18:41.602Z DEBUG 78 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-13T10:18:41.798Z DEBUG 78 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-13T10:18:42.176Z  INFO 78 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-13T10:18:42.242Z  INFO 78 --- [main] com.ai_multilang.Main                    : Started Main in 11.619 seconds (process running for 13.481)
+2025-07-13T10:19:03.005Z  INFO 78 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-13T10:19:03.007Z  INFO 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-13T10:19:03.008Z DEBUG 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-13T10:19:03.009Z DEBUG 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-13T10:19:03.010Z DEBUG 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-13T10:19:03.015Z DEBUG 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@550e79f7
+2025-07-13T10:19:03.017Z DEBUG 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@38bc67a5
+2025-07-13T10:19:03.019Z DEBUG 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-13T10:19:03.021Z  INFO 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2025-07-13T10:19:03.048Z DEBUG 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/v1/chat", parameters={}
+2025-07-13T10:19:03.083Z DEBUG 78 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T10:19:03.145Z DEBUG 78 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T10:19:03.177Z DEBUG 78 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T10:19:03.179Z DEBUG 78 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T10:19:03.433Z DEBUG 78 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@60a20ae1]
+2025-07-13T10:19:03.559Z DEBUG 78 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://ollama:11434/api/generate
+2025-07-13T10:19:03.581Z DEBUG 78 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T10:19:03.587Z DEBUG 78 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "hi"
+}
+] as "application/json"
+2025-07-13T10:19:48.716Z DEBUG 78 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2025-07-13T10:19:48.748Z DEBUG 78 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/x-ndjson"
+2025-07-13T10:20:04.873Z DEBUG 78 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T10:20:04.901Z DEBUG 78 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@643b983a]
+2025-07-13T10:20:04.994Z DEBUG 78 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T10:20:12.338Z DEBUG 78 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T10:20:12.340Z DEBUG 78 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T10:20:12.349Z DEBUG 78 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@2aa2c672]
+2025-07-13T10:20:12.362Z DEBUG 78 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP POST http://ollama:11434/api/generate
+2025-07-13T10:20:12.368Z DEBUG 78 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T10:20:12.369Z DEBUG 78 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "what is h20?"
+}
+] as "application/json"
+2025-07-13T10:20:18.010Z DEBUG 78 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2025-07-13T10:20:18.012Z DEBUG 78 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/x-ndjson"
+2025-07-13T10:20:54.742Z DEBUG 78 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T10:20:54.744Z DEBUG 78 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@54f7f507]
+2025-07-13T10:20:54.756Z DEBUG 78 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-13T10:23:03.005Z DEBUG 78 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/v1/chat", parameters={}
+2025-07-13T10:23:03.006Z DEBUG 78 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ai_multilang.controller.ChatController#chat(ChatRequest)
+2025-07-13T10:23:03.017Z DEBUG 78 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ai_multilang.model.ChatRequest@702623c0]
+2025-07-13T10:23:03.026Z DEBUG 78 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP POST http://ollama:11434/api/generate
+2025-07-13T10:23:03.029Z DEBUG 78 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2025-07-13T10:23:03.030Z DEBUG 78 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Writing [{
+  "model": "gemma:2b",
+  "prompt": "how to separate hydrogen and oxygen from h2o?"
+}
+] as "application/json"
+2025-07-13T10:23:10.275Z DEBUG 78 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
+2025-07-13T10:23:10.276Z DEBUG 78 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/x-ndjson"
+2025-07-13T10:28:22.339Z DEBUG 78 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-13T10:28:22.340Z DEBUG 78 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ai_multilang.model.ChatResponse@e29c584]
+2025-07-13T10:28:22.372Z DEBUG 78 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
